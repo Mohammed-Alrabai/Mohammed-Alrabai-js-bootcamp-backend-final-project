@@ -13,7 +13,8 @@ Through the available API in our project, students can create accounts, log in, 
 ### DEMO
 
 <BR>
-    
+[DEMO](https://example.com](https://example.com](https://learndash-lms-learning-management-system.onrender.com)
+
 [DEMO]([https://example.com](https://learndash-lms-learning-management-system.onrender.com/))
     
 <br>
