@@ -1,0 +1,53 @@
+<section>
+  <div
+    class="mx-auto max-w-screen-2xl py-48"
+    style="margin-left: 330px; margin-right: 30px">
+    <div class="grid grid-cols-1 lg:h-screen">
+      <div class="relative flex items-center bg-gray-100">
+        <span
+          class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+
+        <div class="relative max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0">
+          <h2 class="text-2xl font-bold sm:text-3xl">
+            Title :<%= Course.title %>
+          </h2>
+
+          <p class="mt-4 text-md leading-relaxed text-gray-600">
+            <span
+              class="text-base leading-relaxed text-gray-600 font-medium title-font">
+              Description : </span
+            ><br /><%= Course.description %>
+          </p>
+          <p class="mt-4 text-md leading-relaxed text-gray-600">
+            <span
+              class="text-base leading-relaxed text-gray-600 font-medium title-font">
+              Content : </span
+            ><br /><%= Course.content %>
+          </p>
+
+          <p class="mt-4 text-md leading-relaxed text-gray-600">
+            <span
+              class="text-base leading-relaxed text-gray-600 font-medium title-font">
+              Date : </span
+            ><br /><%= Course.date %>
+          </p>
+
+          <a
+            href="/instructor/home"
+            class="mt-8 inline-block rounded border py-2 px-6 flex items-center justify-center absolute left-0 border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
+            Back to Dashboard
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              viewBox="0 0 20 20"
+              fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

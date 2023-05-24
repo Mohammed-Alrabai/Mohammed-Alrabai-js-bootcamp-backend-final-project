@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!--Content-->
+    <section class="text-gray-600 bg-gray-100 body-font">
+      <div class="container px-20 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              <%= session.name %>
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+            gentrify, subway tile poke farm-to-table. Franzen you probably
+            haven't heard of them man bun deep jianbing selfies heirloom prism
+            food truck ugh squid celiac humblebrag.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <% for( const course of session.courses ) { %>
+
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-white p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/720x400"
+                alt="content" />
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                <%= course.name %>
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Chichen Itza
+              </h2>
+              <p class="leading-relaxed text-base"><%= course.description %></p>
+              <a
+                class="text-indigo-500 inline-flex items-center mt-3 hover:text-indigo-600 focus:text-indigo-600"
+                href="#"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+    <!--End Content-->
+    <div class="bg-gray-50"></div>
+  </body>
+</html>

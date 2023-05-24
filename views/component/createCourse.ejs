@@ -1,0 +1,117 @@
+<section
+  class="text-gray-600 body-font w-1\/2 mx-auto flex items-center justify-center"
+  style="margin-left: 270px; margin-right: 30px">
+  <div class="container px-5 py-8 mx-auto">
+    <div class="flex flex-wrap w-full mb-20 relative">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1
+          class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          Create Course
+        </h1>
+        <div class="h-1 bg-indigo-500 rounded" style="width: 75vw"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4 h-screen">
+      <!--Start Create Course Form-->
+      <div
+        class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800"
+        style="
+          padding-left: 250px;
+          padding-right: 250px;
+          max-width: 100%;
+          padding-top: 50px;
+        ">
+    <div class="flex items-center justify-center h-screen">
+      <div
+        class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
+
+        <form
+          class="w-full px-6 py-8 md:px-8"
+          action="/instructor/createCourse"
+          method="post">
+            <p
+              class="mt-3 text-2xl text-center text-indigo-600 dark:text-gray-200">
+              Create Course
+            </p>
+            <div class="flex items-center justify-between mt-4">
+              <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/2"></span>
+              <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/2"></span>
+            </div>
+
+              <div class="mt-4">
+              <label
+              for="title"
+                class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                for="title"
+                >Title Course</label
+              >
+              <input
+              name="title" required
+                id="title"
+                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-600 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-indigo-300"
+                type="text" />
+            </div>
+
+            <div class="mt-4">
+              <label
+              for ="description"
+                class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                for="description"
+                >description Course</label
+              >
+              <input
+                id="description"
+                required
+                name="description"
+                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-600 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-indigo-300"
+                type="text" />
+            </div>
+
+            <div class="mt-4">
+              <div class="flex justify-between">
+                <label
+                for ="content"
+                  class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                  >Content Course</label
+                >
+              </div>
+
+              <textarea
+                name="content"
+                id="content"
+                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-600 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-indigo-300"
+                type="text"></textarea>
+            </div>
+            
+                        <div class="mt-4">
+              <div class="flex justify-between">
+                <label
+                for ="date"
+                  class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                  >Date Course</label
+                >
+              </div>
+
+              <input
+                required
+                name="date"
+                id="date"
+                class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-indigo-600 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-indigo-300"
+                type="date"/>
+            </div>
+
+            <div class="mt-6">
+              <button
+                type="submit"
+                class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize
+                 transition-colors duration-300 transform bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+                Create Course
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
