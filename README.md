@@ -12,33 +12,6 @@ Through the available API in our project, students can create accounts, log in, 
 
 ### DEMO
 
-<style>
-    .my-button {
-  background-color: #7e6ef1; 
-  color: white; 
-  padding: 10px 20px; 
-  border: none; 
-  text-align: center;
-  text-decoration: none; 
-  display: inline-block; 
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-    }
-  a {
-        text-decoration: none;
-        color: white;
-  }
-  a:hover{
-    color: white;
-    text-decoration: none;
-    
-}
-    .my-button:hover {
-        background-color: #7766f7;
-    }
-
-</style>
 <BR>
     
 <button class="my-button"><a
