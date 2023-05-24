@@ -39,7 +39,6 @@ Through the available API in our project, students can create accounts, log in, 
     }
 
 </style>
-
 <BR>
     
 <button class="my-button"><a
