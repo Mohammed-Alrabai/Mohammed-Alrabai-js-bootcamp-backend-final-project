@@ -86,6 +86,8 @@ Through the available API in our project, students can create accounts, log in, 
 <img src='./public/img/Screen_website/screencapture-learndash-lms-learning-management-system-onrender-instructor-home-2023-05-25-00_13_09.png'>
 
 <hr>
+    
+    
 ## Installation :
 
 ### To set up the project locally, follow these steps:
